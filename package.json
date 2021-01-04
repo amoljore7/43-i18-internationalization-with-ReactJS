@@ -1,0 +1,25 @@
+{
+  "name": "internationalization-dynamic",
+  "version": "1.0.0",
+  "description": "localizing an app with Dynamic content",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "3.4.0",
+    "detect-browser-language": "0.0.2",
+    "i18next": "11.1.1",
+    "i18next-browser-languagedetector": "2.2.0",
+    "i18next-xhr-backend": "1.5.1",
+    "react": "16.3.0",
+    "react-dom": "16.3.0",
+    "react-i18next": "7.5.1",
+    "react-scripts": "1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
