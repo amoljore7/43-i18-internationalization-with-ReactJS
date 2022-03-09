@@ -28,11 +28,11 @@ class App extends React.Component {
     this.setState({ userLanguage: detectBrowserLanguage() });
     this.props.i18n.changeLanguage(detectBrowserLanguage());
   }
-  // handleChange = (event) => {
-  //   let newUserLanguage = event.target.value;
-  //   this.setState((prevState) => ({ userLanguage: newUserLanguage }));
-  //   this.props.i18n.changeLanguage(newUserLanguage);
-  // };
+  handleChange = (event) => {
+    let newUserLanguage = event.target.value;
+    this.setState((prevState) => ({ userLanguage: newUserLanguage }));
+    this.props.i18n.changeLanguage(newUserLanguage);
+  };
 
   render() {
     const { t } = this.props;
@@ -42,7 +42,6 @@ class App extends React.Component {
         <Header />
         <div className={classes.container}>
           <Grid container spacing={24}>
-            {/*             
             <Grid item xs={12} className={classes.topgrid}>
               <Paper className={classes.paper}>
                 <div className={classes.root}>
@@ -89,7 +88,7 @@ class App extends React.Component {
                 </div>
               </Paper>
             </Grid>
-             */}
+
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Typography variant="h3" gutterBottom>
