@@ -4,6 +4,7 @@
   "description": "localizing an app with Dynamic content",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "https://amoljore7.github.io/43-i18-internationalization-with-ReactJS/",
   "dependencies": {
     "@material-ui/core": "3.4.0",
     "detect-browser-language": "0.0.2",
@@ -15,11 +16,15 @@
     "react-i18next": "7.5.1",
     "react-scripts": "1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
